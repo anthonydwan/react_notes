@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Greet, { Hello } from "./components/functional";
-import Welcome, { Message } from "./components/class";
+import Welcome, { Message, Counter } from "./components/class";
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <Greet name="Diana" heroName="Wonder Woman" />
       <Welcome name="Bruce" heroName="Batman" /> */}
       {/* <Hello></Hello> */}
-      <Message></Message>
+      {/* <Message></Message> */}
+      <Counter></Counter>
     </div>
   );
 }
