@@ -1,19 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Greet from "./components/functional";
-import Welcome from "./components/class";
-import Hello from "./components/functional";
+import Greet, { Hello } from "./components/functional";
+import Welcome, { Message } from "./components/class";
 
 function App() {
   return (
     <div className="App">
-      <Greet name="Bruce" heroName="Batman" />
+      {/* <Greet name="Bruce" heroName="Batman" />
       <p>child props</p>
       <Greet name="Clark" heroName="Superman" />
       <button>here we've added button</button>
       <Greet name="Diana" heroName="Wonder Woman" />
-      {/* <Welcome/> */}
+      <Welcome name="Bruce" heroName="Batman" /> */}
       {/* <Hello></Hello> */}
+      <Message></Message>
     </div>
   );
 }

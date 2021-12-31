@@ -5,8 +5,8 @@ import React from "react";
 const Greet = (props) => {
   const { name, heroName } = props;
   console.log(props);
-    return (
-      {/*you can only return one element with a react component */}
+  return (
+    //   you can only return one element with a react component
     <div>
       <h1>
         Hello {name} also known as {heroName}
