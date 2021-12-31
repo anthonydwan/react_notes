@@ -38,5 +38,20 @@ const Hello = () => {
   );
 };
 
+const Click = () => {
+  // one way of event handling
+  const clickHandler = () => {
+    console.log("Button clicked");
+  };
+
+  return (
+    //   you are suppose make a function and not call it (without the parens)
+    <div>
+      {/* <button onClick={clickHandler()}>Click</button> */}
+      <button onClick={clickHandler}>Click</button>
+    </div>
+  );
+};
+
 export default Greet;
-export { Hello };
+export { Hello, Click };

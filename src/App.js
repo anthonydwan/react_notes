@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Greet, { Hello } from "./components/functional";
-import Welcome, { Message, Counter } from "./components/class";
+import Greet, { Hello, Click } from "./components/functional";
+import Welcome, { Message, Counter, ClassClick } from "./components/class";
 
+
+// react components have to be in PascalCase
 function App() {
   return (
     <div className="App">
@@ -14,7 +16,9 @@ function App() {
       <Welcome name="Bruce" heroName="Batman" /> */}
       {/* <Hello></Hello> */}
       {/* <Message></Message> */}
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
+      <Click></Click>
+      <ClassClick></ClassClick>
     </div>
   );
 }

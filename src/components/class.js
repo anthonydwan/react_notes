@@ -6,13 +6,16 @@ class Welcome extends Component {
   // can use the mutable state which is managed within the component
   // unlike immutable props which get passed to the component
   render() {
+    const { name, heroName } = this.props;
     return (
       <h1>
-        Welcome {this.props.name} also known as {this.props.heroName}
+        Welcome {name} also known as {heroName}
       </h1>
     );
   }
 }
+
+//---------------------------------------------------------------------------------------
 
 // utilising state with class component
 class Message extends Component {
@@ -39,6 +42,8 @@ class Message extends Component {
     );
   }
 }
+
+//---------------------------------------------------------------------------------------
 
 class Counter extends Component {
   // can use the mutable state which is managed within the component
@@ -89,5 +94,22 @@ class Counter extends Component {
   }
 }
 
+// -------------------------------------------------------------------------
+//  event handling
+
+class ClassClick extends Component {
+  // when handling events, do not call the function (no parens)
+  clickHandler() {
+    console.log("class clicked");
+  }
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.clickHandler}>Class click</button>
+      </div>
+    );
+  }
+}
 export default Welcome;
-export { Message, Counter };
+export { Message, Counter, ClassClick };
