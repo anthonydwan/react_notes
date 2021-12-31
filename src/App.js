@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Greet, { Hello, Click } from "./components/functional";
 import Welcome, { Message, Counter, ClassClick } from "./components/class";
-
+import EventBind from "./components/eventbind";
 
 // react components have to be in PascalCase
 function App() {
@@ -17,8 +17,9 @@ function App() {
       {/* <Hello></Hello> */}
       {/* <Message></Message> */}
       {/* <Counter></Counter> */}
-      <Click></Click>
-      <ClassClick></ClassClick>
+      {/* <Click></Click>
+      <ClassClick></ClassClick> */}
+      <EventBind></EventBind>
     </div>
   );
 }
