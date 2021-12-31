@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import ParentComponent from "./components/ParentComponent";
+import UserGreeting from "./components/UserGreeting";
+// import ParentComponent from "./components/ParentComponent";
 // import Greet, { Hello, Click } from "./components/functional";
 // import Welcome, { Message, Counter, ClassClick } from "./components/class";
 // import EventBind from "./components/eventbind";
@@ -9,7 +10,7 @@ import ParentComponent from "./components/ParentComponent";
 function App() {
   return (
     <div className="App">
-      <ParentComponent></ParentComponent>
+      {/* <ParentComponent></ParentComponent> */}
       {/* <Greet name="Bruce" heroName="Batman" />
       <p>child props</p>
       <Greet name="Clark" heroName="Superman" />
@@ -22,6 +23,7 @@ function App() {
       {/* <Click></Click>
       <ClassClick></ClassClick> */}
       {/* <EventBind></EventBind> */}
+      <UserGreeting></UserGreeting>
     </div>
   );
 }
