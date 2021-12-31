@@ -1,13 +1,15 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import Greet, { Hello, Click } from "./components/functional";
-import Welcome, { Message, Counter, ClassClick } from "./components/class";
-import EventBind from "./components/eventbind";
+import ParentComponent from "./components/ParentComponent";
+// import Greet, { Hello, Click } from "./components/functional";
+// import Welcome, { Message, Counter, ClassClick } from "./components/class";
+// import EventBind from "./components/eventbind";
 
 // react components have to be in PascalCase
 function App() {
   return (
     <div className="App">
+      <ParentComponent></ParentComponent>
       {/* <Greet name="Bruce" heroName="Batman" />
       <p>child props</p>
       <Greet name="Clark" heroName="Superman" />
@@ -19,7 +21,7 @@ function App() {
       {/* <Counter></Counter> */}
       {/* <Click></Click>
       <ClassClick></ClassClick> */}
-      <EventBind></EventBind>
+      {/* <EventBind></EventBind> */}
     </div>
   );
 }
