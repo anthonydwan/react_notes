@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import UserGreeting from "./components/UserGreeting";
+import ListRendering from "./components/ListRendering";
+// import UserGreeting from "./components/ConditionalRendering";
 // import ParentComponent from "./components/ParentComponent";
 // import Greet, { Hello, Click } from "./components/functional";
 // import Welcome, { Message, Counter, ClassClick } from "./components/class";
@@ -23,7 +24,8 @@ function App() {
       {/* <Click></Click>
       <ClassClick></ClassClick> */}
       {/* <EventBind></EventBind> */}
-      <UserGreeting></UserGreeting>
+      {/* <UserGreeting></UserGreeting> */}
+      <ListRendering></ListRendering>
     </div>
   );
 }
