@@ -1,11 +1,12 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import ListRendering from "./components/ListRendering";
+// import ListRendering from "./components/ListRendering";
 // import UserGreeting from "./components/ConditionalRendering";
 // import ParentComponent from "./components/ParentComponent";
 // import Greet, { Hello, Click } from "./components/functional";
 // import Welcome, { Message, Counter, ClassClick } from "./components/class";
 // import EventBind from "./components/eventbind";
+import Stylesheet from "./components/Stylesheet";
 
 // react components have to be in PascalCase
 function App() {
@@ -25,7 +26,8 @@ function App() {
       <ClassClick></ClassClick> */}
       {/* <EventBind></EventBind> */}
       {/* <UserGreeting></UserGreeting> */}
-      <ListRendering></ListRendering>
+      {/* <ListRendering></ListRendering> */}
+      <Stylesheet primary={true}></Stylesheet>
     </div>
   );
 }
